@@ -107,7 +107,7 @@ def login(req):
             rep = redirect('/index.html')
             return rep
         else:
-            message = "用户名或密码错误"
+            message = "用户名或密码错误!!!"
     obj = render(req, "login.html", {"msg":message})
     return obj
 
