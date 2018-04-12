@@ -88,7 +88,7 @@ class Login(views.View):
             rep = redirect('/index.html')
             return rep
         else:
-            message = "用户名或密码错误"
+            message = "用户名或密码错误!"
             return render(req, 'login.html', {'msg': message})
 
 
